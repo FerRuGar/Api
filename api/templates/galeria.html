@@ -1,0 +1,411 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Carpintería "Ruiz"</title>
+
+  <meta name="language" content="en-EN" />
+  <meta name="author" content="Irfan Maulana" />
+  <link rel="author" href="https://plus.google.com/u/0/+irfanmaulana-mazipan/posts" />
+  <link rel="publisher" href="https://plus.google.com/u/0/+irfanmaulana-mazipan" />
+  <meta name="keywords" content="bootstrap, bootstrap 4, bootstrap 4 template, bootstrap 4 admin, bootstrap 4 dashboard" />
+  <meta name="description" content="Bootstrap 4 admin dashboard template by Irfan Maulana" />
+  <meta property="og:title" content="Bootstrap 4 Admin Dashboard Template | Irfan Maulana" />
+  <meta property="og:description" content="Bootstrap 4 admin dashboard template by Irfan Maulana" />
+  <meta property="og:url" content="https://mazipan.github.io/bootstrap4-admin-dashboard-template/" />
+  <meta property="og:site_name" content="Bootstrap 4 Admin Dashboard Template" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@maz_ipan" />
+  <meta name="twitter:creator" content="@maz_ipan" />
+  <meta name="twitter:title" content="Bootstrap 4 Admin Dashboard Template | Irfan Maulana" />
+  <meta name="twitter:description" content="Bootstrap 4 admin dashboard template by Irfan Maulana" />
+  <meta name="twitter:domain" content="https://mazipan.github.io/bootstrap4-admin-dashboard-template/" />
+  <link rel="home" href="https://mazipan.github.io/bootstrap4-admin-dashboard-template/">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://mazipan.github.io/favicon/favicon-16x16.png">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static "dist/main.css" %}">
+  <link rel="stylesheet" href="{% static "cssCarrito/normalize.css" %}">
+  <link rel="stylesheet" href="{% static "cssCarrito/skeleton.css" %}">
+  <link rel="stylesheet" href="{% static "cssCarrito/custom.css" %}">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-25065548-2"></script>
+  <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-25065548-2');</script>
+
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5442972248172818",
+    enable_page_level_ads: true
+  });
+  </script>
+  
+</head>
+
+<body>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="{% static "cssCarrito/normalize.css" %}">
+    <link rel="stylesheet" href="{% static "cssCarrito/skeleton.css" %}">
+    <link rel="stylesheet" href="{% static "cssCarrito/custom.css" %}">
+</head>
+<body>
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <img src="{% static "imgCarrito/logo.jpeg" %}" id="logo">
+            </div>
+        </div> 
+    </div>
+    </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <aside class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+
+          <h6 class="sidebar-heading">
+            <span>Menú</span>
+          </h6>
+
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="{% url "inicio" %}">
+                <i class="fa fa-tachometer"></i>
+                Inicio
+                <span class="badge badge-primary">14</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-desktop"></i> Galería
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url "ubicacion" %}">
+                <i class="fa fa-bar-chart"></i> Ubicación
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url "Forms" %}">
+                <i class="fa fa-pencil-square-o"></i> Forms
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url "Tables" %}">
+                <i class="fa fa-table"></i> Tables
+              </a>
+            </li>
+          </ul>
+
+          <h6 class="sidebar-heading">
+            <span>User Area</span>
+          </h6>
+
+          <ul class="nav flex-column">
+
+            <li class="nav-item has-child">
+              <a class="nav-link" href="#">
+                <i class="fa fa-user-o"></i> Profile
+                <span class="badge badge-primary">3</span>
+
+                <i class="fa fa-caret-down caret float-right mt-1"></i>
+              </a>
+
+              <ul class="nav flex-column is-child">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/mazipan" target="blank" rel="noopener">
+                    <i class="fa fa-github"></i> Github
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://twitter.com/Maz_Ipan" target="blank" rel="noopener">
+                    <i class="fa fa-twitter"></i> Twitter
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.facebook.com/mazipanneh" target="blank" rel="noopener">
+                    <i class="fa fa-facebook"></i> Facebook
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-cog"></i> Configuración
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="{% url "acceso" %}">
+                <i class="fa fa-power-off"></i> Cerrar Sesion
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </aside>
+      <main class="col-md-10 ml-sm-auto col-lg-10 pt-3 px-4">
+
+        <div id="hero">
+          <img src="{% static "imgCarrito/principal.jpeg" %}" id="img-prin">
+            {% comment %} <div class="container">
+                <div class="row">
+                      <div class="six columns">
+                          <div class="contenido-principal">
+                                  <h2>Aprende algo nuevo</h2>
+                                  <p>Todos los cursos a $15</p>
+                                  <form action="#" id="busqueda" method="post" class="formulario">
+                                      <input class="u-full-width" type="text" placeholder="¿Que te gustaría Aprender?" id="buscador">
+                                      <input type="submit" id="submit-buscador" class="submit-buscador">
+                                  </form>
+                          </div>
+                      </div>
+                </div> 
+            </div> {% endcomment %}
+        </div>
+      
+        <div class="barra">
+          <div class="container">
+              <div class="row">
+                      <div class="four columns icono icono1">
+                          <h3>Compra con nosotros</h3>
+                      </div>
+                      <div class="four columns icono icono2">
+                          <p>Ve nuestros productos, si gustas puedes agregalos al carrito</p>
+                      </div>
+                      <div class="four columns icono icono3">
+                          <p><div class="two columns u-pull-right">
+                            <ul>
+                                <li class="submenu">
+                                        <img src="{% static "imgCarrito/cart.png" %}" id="img-carrito">
+                                        <div id="carrito">
+                                                
+                                                <table id="lista-carrito" class="u-full-width">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Imagen</th>
+                                                            <th>Nombre</th>
+                                                            <th>Precio</th>
+                                                            <th>Cantidad</th>
+                                                            <th></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody></tbody>
+                                                </table>
+                                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                                        </div>
+                                </li>
+                            </ul>
+                        </div></p>
+                      </div>
+              </div>
+          </div>
+  
+      </div>
+
+      <div id="lista-cursos" class="container">
+        <h1 id="encabezado" class="encabezado">Bases de Madera para Celular</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="{% static "images/Imagen1.jpeg" %}" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Base de Madera de Pino</h4>
+                        <p>Carpintería "RUIZ"</p>
+                        <img src="{% static "imgCarrito/estrellas.png" %}">
+                        <p class="precio">$300  <span class="u-pull-right ">$220</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                      <img src="{% static "images/chocolate.jpeg" %}" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Base de MDF color Chocolate</h4>
+                            <p>Carpintería "Ruiz"</p>
+                            <img src="{% static "imgCarrito/estrellas.png" %}">
+                            <p class="precio">$220  <span class="u-pull-right ">$180</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                      <img src="{% static "images/gris.jpeg" %}" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Base de Madera tono gris</h4>
+                            <p>Carpintería "Ruiz"</p>
+                            <img src="{% static "imgCarrito/estrellas.png" %}">
+                            <p class="precio">$600  <span class="u-pull-right ">$480</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+              <div class="card">
+                  <img src="{% static "images/Imagen1.jpeg" %}" class="imagen-curso u-full-width">
+                  <div class="info-card">
+                      <h4>Base de Madera de Pino</h4>
+                      <p>Carpintería "RUIZ"</p>
+                      <img src="{% static "imgCarrito/estrellas.png" %}">
+                      <p class="precio">$300  <span class="u-pull-right ">$220</span></p>
+                      <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                  </div>
+              </div>
+          </div>
+          <div class="four columns">
+                  <div class="card">
+                    <img src="{% static "images/chocolate.jpeg" %}" class="imagen-curso u-full-width">
+                      <div class="info-card">
+                          <h4>Base de MDF color Chocolate</h4>
+                          <p>Carpintería "Ruiz"</p>
+                          <img src="{% static "imgCarrito/estrellas.png" %}">
+                          <p class="precio">$220  <span class="u-pull-right ">$180</span></p>
+                          <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                      </div>
+                  </div>
+          </div>
+          <div class="four columns">
+                  <div class="card">
+                    <img src="{% static "images/gris.jpeg" %}" class="imagen-curso u-full-width">
+                      <div class="info-card">
+                          <h4>Base de Madera tono gris</h4>
+                          <p>Carpintería "Ruiz"</p>
+                          <img src="{% static "imgCarrito/estrellas.png" %}">
+                          <p class="precio">$600  <span class="u-pull-right ">$480</span></p>
+                          <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                      </div>
+                  </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="four columns">
+            <div class="card">
+                <img src="{% static "images/Imagen1.jpeg" %}" class="imagen-curso u-full-width">
+                <div class="info-card">
+                    <h4>Base de Madera de Pino</h4>
+                    <p>Carpintería "RUIZ"</p>
+                    <img src="{% static "imgCarrito/estrellas.png" %}">
+                    <p class="precio">$300  <span class="u-pull-right ">$220</span></p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="four columns">
+                <div class="card">
+                  <img src="{% static "images/chocolate.jpeg" %}" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Base de MDF color Chocolate</h4>
+                        <p>Carpintería "Ruiz"</p>
+                        <img src="{% static "imgCarrito/estrellas.png" %}">
+                        <p class="precio">$220  <span class="u-pull-right ">$180</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                    </div>
+                </div>
+        </div>
+        <div class="four columns">
+                <div class="card">
+                  <img src="{% static "images/gris.jpeg" %}" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Base de Madera tono gris</h4>
+                        <p>Carpintería "Ruiz"</p>
+                        <img src="{% static "imgCarrito/estrellas.png" %}">
+                        <p class="precio">$600  <span class="u-pull-right ">$480</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="four columns">
+          <div class="card">
+              <img src="{% static "images/Imagen1.jpeg" %}" class="imagen-curso u-full-width">
+              <div class="info-card">
+                  <h4>Base de Madera de Pino</h4>
+                  <p>Carpintería "RUIZ"</p>
+                  <img src="{% static "imgCarrito/estrellas.png" %}">
+                  <p class="precio">$300  <span class="u-pull-right ">$220</span></p>
+                  <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+              </div>
+          </div>
+      </div>
+      <div class="four columns">
+              <div class="card">
+                <img src="{% static "images/chocolate.jpeg" %}" class="imagen-curso u-full-width">
+                  <div class="info-card">
+                      <h4>Base de MDF color Chocolate</h4>
+                      <p>Carpintería "Ruiz"</p>
+                      <img src="{% static "imgCarrito/estrellas.png" %}">
+                      <p class="precio">$220  <span class="u-pull-right ">$180</span></p>
+                      <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                  </div>
+              </div>
+      </div>
+      <div class="four columns">
+              <div class="card">
+                <img src="{% static "images/gris.jpeg" %}" class="imagen-curso u-full-width">
+                  <div class="info-card">
+                      <h4>Base de Madera tono gris</h4>
+                      <p>Carpintería "Ruiz"</p>
+                      <img src="{% static "imgCarrito/estrellas.png" %}">
+                      <p class="precio">$600  <span class="u-pull-right ">$480</span></p>
+                      <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                  </div>
+              </div>
+      </div>
+  </div>
+</div>  
+
+    <script src="{% static "jsCarrito/app.js" %}"></script>
+    {% comment %} <script src="https://www.paypal.com/sdk/js?client-id=ATCTNyn6rWZsz49DPMNwI4VZcb-bHYtD7LEIq4ByiC7bs07_Y4_n0q2sat3SDCcKBrsPkqQjuo_rzc3u&currency=MXN"></script>
+      
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Galería de Fotos</title>
+      </head>
+    
+        <h1>Bases para celular</h1>
+    
+        <div class="gallery">
+          <link rel="stylesheet" href="{% static "CSS/galeria.css" %}">
+            
+            <img src="{% static "images/Imagen1.jpeg" %}" alt="Base de madera para celular">
+            <img src="{% static "images/Imagen2.jpeg" %}" alt="Base de madera para celular">
+            <img src="{% static "images/Imagen3.jpeg" %}" alt="Base de madera para celular">
+            
+        </div>
+
+      <div id="paypal-button-container">
+        <script src="{% static "js/paypal.js" %}"></script>
+      </div> {% endcomment %}
+        
+
+  <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://www.mazipan.github.io/","name":"Irfan Maulana | Front End Developer","author":"Irfan Maulana","image":"http://mazipan.github.io/images/irfan-maulana.jpg","description":"Irfan Maulana is Front End Developer from Indonesia - Man that craft some code to build a beauty and readable code, experienced in web and desktop technology.","sameAs":["https://www.facebook.com/mazipanneh","https://instagram.com/maz_ipan","https://twitter.com/Maz_Ipan","https://id.linkedin.com/in/irfanmaulanamazipan","https://www.slideshare.net/IrfanMaulana21","https://github.com/mazipan"]}</script>
+  <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","email":"mailto:mazipanneh@gmail.com","image":"http://mazipan.github.io/images/irfan-maulana.jpg","jobTitle":"Software Engineer","name":"Irfan Maulana","url":"https://www.mazipan.github.io/","sameAs":["https://www.facebook.com/mazipanneh","https://instagram.com/maz_ipan","https://twitter.com/Maz_Ipan","https://id.linkedin.com/in/irfanmaulanamazipan","https://www.slideshare.net/IrfanMaulana21","https://github.com/mazipan"]}</script>
+  <script type="application/ld+json">{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://mazipan.github.io/","name":"Home","image":"http://mazipan.github.io/images/irfan-maulana.jpg"}},{"@type":"ListItem","position":2,"item":{"@id":"http://mazipan.github.io/demo/","name":"Demo","image":"http://mazipan.github.io/images/irfan-maulana.jpg"}},{"@type":"ListItem","position":3,"item":{"@id":"http://mazipan.github.io/bootstrap4-admin-dashboard-template","name":"bootstrap4-admin-dashboard-template","image":"http://mazipan.github.io/images/irfan-maulana.jpg"}}]}</script>
+
+</body>
+
+</html>
