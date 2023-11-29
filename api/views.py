@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from rest_framework.views import APIView
 from django.shortcuts import render, redirect
-# from django.contrib.auth import acceso
+from .forms import *
+from django.contrib.auth import login
 from django.views import *
 
 class Acceso(APIView):
@@ -47,6 +48,22 @@ class Completo(APIView):
     def get(self, request):
         return render(request, self.template_name)
 
+class registro(View):
+    template_name = 'registro.html'
+    form_class = UserCreationForm
+
+    def get(self, request):
+        form = self.form_class()
+        return render(request, self.template_name, {'form': form})
+
+    def post(self, request):
+        form = self.form_class(request.POST)
+        if form.is_valid():
+            user = form.save()
+            login(request, user)  # Iniciar sesión automáticamente después del registro
+            return redirect('acceso')  # Cambia 'página_principal' a la URL de tu elección
+        return render(request, self.template_name, {'form': form})
+    
 # class Registro(HttpRequest):
 #     def index(request):
 #         Usuario = Registro_Form

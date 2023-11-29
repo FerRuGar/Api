@@ -26,7 +26,7 @@ urlpatterns = [
     path('tables/',Tables.as_view(), name="Tables"),
     path('galeria/',Galeria.as_view(), name="galeria"),
     path('completo/',Completo.as_view(), name="completo"),
-    # path('registro/',Registro.as_view(), name="registro"),
+    path('registro/',registro.as_view(), name="registro"),
     path('acceso/', Acceso.as_view(), name='acceso'),
     path('carrito/', Carrito.as_view(), name='carrito')
 ]
